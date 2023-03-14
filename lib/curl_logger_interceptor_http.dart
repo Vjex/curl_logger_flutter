@@ -21,7 +21,7 @@ class CurlLoggerInterceptorHttp extends InterceptorContract {
   String _cURLRepresentation(RequestData request) {
     List<String> components = ['curl -i'];
     if (request.method.name.toUpperCase() != 'GET') {
-      components.add('-X ${request.method}');
+      components.add('-X ${request.method.name}');
     }
 
     request.headers.forEach((k, v) {
@@ -31,7 +31,7 @@ class CurlLoggerInterceptorHttp extends InterceptorContract {
     });
 
     if ( request.body != null    ) {
-      final data = json.encode(request.body).replaceAll('"', '\\"');
+      final data = json.encode(request.body);
       components.add('-d "$data"');
     }
 
