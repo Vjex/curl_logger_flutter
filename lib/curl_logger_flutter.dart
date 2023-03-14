@@ -1,0 +1,1 @@
+library curl_logger_flutter;

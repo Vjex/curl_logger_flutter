@@ -1,0 +1,23 @@
+name: curl_logger_flutter
+description: Get your http requests printed as curl command in your terminal. Share them easily with your colleagues and import them in Postman!
+version: 0.0.1
+homepage: https://github.com/Vjex/curl_logger_flutter
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  http: ^0.13.5
+  flutter:
+    sdk: flutter
+  http_interceptor: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  
