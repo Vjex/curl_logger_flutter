@@ -4,8 +4,8 @@ version: 0.0.2
 homepage: https://github.com/Vjex/curl_logger_flutter
 
 environment:
-  sdk: '>=2.18.5 <3.0.0'
-  flutter: ">=1.17.0"
+  sdk: '>=3.5.1'
+  flutter: ">=3.24.1"
 
 dependencies:
   http: ^0.13.5
